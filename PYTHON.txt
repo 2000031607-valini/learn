@@ -1,0 +1,355 @@
+2+3
+5
+>>> 5/2
+2.5
+>>> 5//2
+2
+>>> 5*2
+10
+>>> 5**2
+25
+>>> -+10
+-10
+>>> AMMA
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'AMMA' is not defined
+>>> print('AMMA')
+AMMA
+>>> 'AMMA'
+'AMMA'
+>>> 'Madhumitha+is+a+stupid+girl'
+'Madhumitha+is+a+stupid+girl'
+>>> 'Madhumitha' + 'is' + 'a' + 'stupid' + 'girl'
+'Madhumithaisastupidgirl'
+>>> 'Madhumitha' + ' is' +  'a' + ' stupid' +' girl'
+'Madhumitha isa stupid girl'
+>>> 'Madhumitha' + ' is' +  ' a' + ' stupid' +' girl'
+'Madhumitha is a stupid girl'
+>>> 'Valini'*10
+'ValiniValiniValiniValiniValiniValiniValiniValiniValiniValini'
+>>> ' Valini'*10
+' Valini Valini Valini Valini Valini Valini Valini Valini Valini Valini'
+>>> a=10
+>>> b=20
+>>> c=a+b
+>>> print(c)
+30
+>>> name='madhu'
+>>> name(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> name[0]
+'m'
+>>> name[1]
+'a'
+>>> name[2]
+'d'
+>>> name[3]
+'h'
+>>> name[4]
+'u'
+>>> name[5]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> name[-1]
+'u'
+>>> name[0:2]
+'ma'
+>>> name[0:]
+'madhu'
+>>> name[:2]
+'ma'
+>>> name[ :2]
+'ma'
+>>> Stupid+name
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Stupid' is not defined
+>>> Stupid+ name
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Stupid' is not defined
+>>> 'Stupid' + name
+'Stupidmadhu'
+
+
+minus and divison are not supported
+---lists and tuples
+lists is collection of sentences/group of numbers
+>>> a=[10,20,30,40,50]
+>>> a[0]
+10
+>>> a[3]
+40
+>>> a[0:1]
+[10]
+>>> a[0:3]
+[10, 20, 30]
+>>> a[-1]
+50
+>>> var=['madhu','ramu']
+>>> c=[a,var]
+>>> print(c)
+[[10, 20, 30, 40, 50], ['madhu', 'ramu']]
+>>> A=[10,'ABC',70,30]
+>>> c=[a,var,A]
+>>> print(c)
+[[10, 20, 30, 40, 50], ['madhu', 'ramu'], [10, 'ABC', 70, 30]]
+>>> a.append(60)
+>>> A.append(60)
+>>> print(a)
+[10, 20, 30, 40, 50, 60]
+>>> print(A)
+[10, 'ABC', 70, 30, 60]
+>>> a.sort()
+>>> print(a)
+[10, 20, 30, 40, 50, 60]
+----a.append(0,32)
+a.append(2,37)
+
+------->
+------->
+>>> a=input("enter a")
+enter a=10
+>>> b=20
+>>> c=a+b
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+----you get error bcz by default when u take a value using function input
+it is taken as string.
+>>> a=input("enter a")
+enter a=10
+>>> b="Amma"
+>>> c=a+b
+>>> print(c)
+=10Amma
+------------------------------------------------------------------------
+__________________________________________________________________________
+---->TYPE
+>>> a=input("hi")
+hi
+>>> print(type(a))
+<class 'str'>
+>>> b=20
+>>> print(type(b))
+<class 'int'>
+>>> c=1.2
+>>> print(type(c))
+<class 'float'>
+________________________________________________________________________
+---> # fa 1 line
+---> """" or ''' for many lines
+__________________________________________________________________________
+---->OPERATORS
+airthmetic operator 
+logical operator
+bitwise operator
+identity operator
+membership operator
+---->
+1) write a python program using logical operator?
+>>> a=20
+>>> b=10
+>>> print(a>b)
+True
+>>> print(a<b)
+False
+>>> print(5 and 2)
+2
+>>> print(a and b)
+10
+>>> print(5 or 2)
+5
+>>> print(a or b)
+20
+
+--->MEMBERSHIP
+>>> x1=5
+>>> y1=5
+>>> print(x1 is y1)
+True
+>>> print(x1 is not y1)
+False
+>>> roll_no=[1,2,3,4,5]
+>>> print(3 in roll_no)
+True
+>>> print(7 in roll_no)
+False
+>>> print(7 not in roll_no)
+True
+_______________________________________________________________
+--->CONDITIONAL 
+>>> a=10
+>>> b=20
+>>> if a>b:
+...        print(" ais big")
+... else:
+...        print(" a is small")
+...
+ a is small
+
+>>> a=10
+>>> if a%2==0:
+...        print("a is even")
+... else:
+...        print(" a is odd")
+...
+a is even
+
+>>> a=10
+>>> b=20
+>>> c=30
+>>> if a>b:
+...        print("a is big")
+... elif b>a and b>c:
+...        print("b is big")
+... else:
+...        print("c is big")
+...
+c is big
+
+--->NESTED IF
+
+>>> a=int(input("enter a value"))
+enter a value10
+>>> if a>b:
+...       if a==0:
+...               print("a is zero")
+...       else:
+...               print("a is >0")
+... else:
+...               print("a is negative")
+
+---->Adding of two complex numbers
+THE FUNCTION IS COMPLEX
+SyntaxError: invalid syntax
+>>> x=complex(10,20)
+>>> print(a)
+10
+>>> print(x)
+(10+20j)
+>>> y=complex(15,30)
+>>> print(y)
+(15+30j)
+>>> c=x+y
+>>> print(c)
+(25+50j)
+
+________________________________________________________________________
+
+---->LISTS AND TUPLES
+we can change/update  the data only in lists  but not in tuples.
+>>> l=[10,20,30,40]
+>>> l[0]=10
+>>> l[0]=23
+>>> t=[10,20,30,40]
+>>> t[0]=10
+>>> t[0]=23
+
+>>> t=(10,20,30,40)
+>>> t=(10,20,30,40)
+>>> print(t[0])
+10
+>>> t[0]=23
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+
+import os 
+print(os.name)
+os.mkdr("directory name ")
+os.getcwd()
+print(os.getcwd())
+os.chdir()
+print(os.chdir())
+os.rmdir("name of the directory that you are interested to delete it permanently")
+_______________________________________________________________________
+def is keyword used to create a function 
+ def foo()
+   print("AMMA")
+foo()
+---------------------------------------------------------------------------------------------
+TO check whether the program is in main function or not
+- - name - -
+if _ _name _ _ = _ _ main _ _
+______________________________________________________________________
+create a folder
+right click on the folder
+git bash here
+user name ,authentication
+nano space to create python file
+write a program ctrl+x 
+git_init 
+git_commit
+________________________________________________________________________
+step 1: download github into ur system
+step 2: create one folder on the desktop
+            right click inside the folder selecet the option gitbash it displays beautiful terminal
+step 3: we supposed to authentication our name and email is
+              git congif---- global user.name "valini"
+              gif config----global user.email "valinisunthwal2003@gmail.com"
+
+step 4: create a python file inside the folder we name as nano program  nampe.py
+step 5: To intialize the data imto the file
+           git init
+           git add
+       git commit-m(m-message)
+step 6: login to github repository
+            click on new and then verify if the repository is present or not
+step 7: to see whteher we are able to linke the local disk to repository
+       to push 
+       git push origin master
+    go to github repositor and refresh it displays the  file 
+after pushing the file into the repository represh the github 
+   our aim is to  pull value from github to local disk for that command is 
+  git pull origin master
+ use command ls
+------------------------------------------------------------------------------------------------------------------
+VIEW.PY
+from django Shortcutt import render
+from django http import http
+from django import setting.py
+def home(request)
+ 	return render (request)
+	def hostel(request)
+	return render (request template.py)
+		{name}
+------------------------------------------------------------------------------------------------------------------
+from django contib import  admin
+from django url's import path
+from view.py import home,hostel'url patterns[
+line 1->we have admin path
+line 2->path to method 1
+path[" " home,name=Home
+line 3->path to method 2
+path["hostel",hostel,name=hostel
+----------------------------------------------------------------------------------------------------------
+MODELS.PY(busiines logic for database connecting)
+model.py is used to store and retrieve the data from database
+model.py file from the register admin.py
+3.to ceretae a database we use command is python manage.py create superuser
+(superuser is a database in django)
+4.once u cerate a superuser it asks username,email,password in default 
+(here we need to register)
+5.after giving credentials start ...that is run the program
+(python manage.py run server)
+-----------------------------------------------------------------------------------------------------------
+ADMIN.PY(it give prvilages )
+admin.py is used to register and provide license model.py
+model.py consists of 
+from django  contib import model
+from django import data
+from django import time
+	create supermodel
+
+
+
+
+
+
+
+ 

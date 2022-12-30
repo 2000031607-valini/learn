@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body onload="alert('welcome')">
+    <input type="button" value="HANDOUT" onmouseout="alert('Gametime')">
+    <input type="button" value="HANDOUT" onmouseover="alert('Gametime')">
+    <input type="text" onfocus="alert('Enter your name')">
+    <script>
+        var peoples = new Array("one", "two", "three");
+        document.write(peoples[0]);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form name="first">
+        <input type="chekbox" value="terms_conditions" name="hobbies" />
+        Read terms and terms_condition
+        <input type="button" value="Submit" onclick="validator();" />
+    </form>
+    <script>
+        function validator(){
+            if(document.first.hobbies.checked){
+                alert("you are registered")
+            }
+            else{
+                alert("please note the terms and conditions")
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateform(){
+            var name=documnet.myform.name.value;
+            var password=document.myform.password.value;
+
+            if(name==""){
+                alert("Name can't be blank");
+                return false;
+            }
+            else if(password.length<6){
+                alert("Password must be at least 6 charactersistics long.")
+                return false;
+            }
+        }
+    </script>
+    <form name="myform" method="post" onsubmit="return validateform()">
+        Name: <input type="text" name="name"><br/>
+        Password: <input type="password" name="password"><br/>
+        <input type="submit" value="register">
+    </form>
+    
+</body>
+</html>
+
